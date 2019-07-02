@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "4bb70816-2b6b-4169-9a90-770fe24a9847",
+		"name": "for git",
+		"description": "12345",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4d17a512-ff4a-4141-a4b1-c14a32bbcbe0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a223f266-faf4-4f5b-8eae-8a05c65f94f1",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"environment to be production\", function () { ",
+					"    pm.expect(pm.environment.get(\"env\")).to.equal(\"production\"); ",
+					"});"
+				]
+			}
+		}
+	]
+}
